@@ -17,8 +17,8 @@ my_location.date = '2018/1/1 0:00'
 my_location.elevation = 5000
 NSIDE = 512
 m = np.zeros(hp.nside2npix(NSIDE))
-
-planck_path = '/Users/khelson/Documents/CLASS/sky coordinates examples/LFI_SkyMap_044_1024_R2.01_full.fits'
+# download the Planck LFI Sky Map at 44 GHz and place it locally in your own dir
+planck_path = './LFI_SkyMap_044_1024_R2.01_full.fits'
 m = hp.read_map(planck_path,field = 1)
 
 
